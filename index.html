@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Auto random Bing searches">
+  <meta name="keywords" content="HTML, CSS, Javascript">
+  <meta name="author" content="Don Gusto">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Auto Random Searches</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head> 
+
+<body>
+  <img class="logo" src="auto_searches_logo.png" alt="Logo of Auto Random Searches">
+  
+  <header>
+    <h1 class="header-title"><strong>Auto Random Searches</strong></h1>
+    <p class="header-description">Here you can open random searches in your chosen search engine.<span class="small-text">(for informational purposes only)</span></p>
+  </header>
+  
+  <form id="searchForm">
+<div class="options">
+    <label for="myEngine">Search engine:</label><br>
+    <input type="radio" name="myEngine" value='B' id="optionB" checked='checked'><label for="optionB" title='Use Bing for you auto random searches'>Bing</label><br>
+    <input type="radio" name="myEngine" value='D' id="optionD"><label for="optionD" title='Use DuckDuckGo for you auto random searches'>DuckDuckGo</label><br>
+    <input type="radio" name="myEngine" value='G' id="optionG"><label for="optionG" title='Use Google for you auto random searches'>Google</label><br>
+    <input type="radio" name="myEngine" value='Y' id="optionY"><label for="optionY" title='Use Yahoo for you auto random searches'>Yahoo</label><br>
+  </div>
+
+  <br>
+  <div class="options">
+    <label for="mySearches">Searches:</label><br>
+    <input type="number" id="mySearches" name='mySearches' value="30" min="1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+  </div>
+
+  <div class="options">
+    <label for="myDelay">Delayment:</label><br>
+    <input type="number" id="myDelay" name='myDelay' value="3" min="0" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+  </div>
+
+  <br>
+  <div class="container">
+    <button type="submit" title="Start the event (Shortcut: Enter)" class="start-button">Start!</button>
+  </div>
+  <p class="warning">You need to allow pop-ups for this webpage, or else this website may not work correctly!<br><br></p>
+  </form>
+
+  <section>
+<p class="info1"> 
+  <strong>How it works:</strong><br>
+  1. Make sure you meet the requirements<span class="small-text">(see below)</span><br>
+  2. Please don't block the ads on this website<span class="small-text">(I'm sorry, hosting a site is not free...)</span><br>
+  3. Select your search engine<br>
+  4. (optional) Change the number of searches and the delay in seconds<br>
+  5. Press start or hit "Enter"<br>
+  6. Random searches will start in new tabs with your chosen delay between the searches</p>
+
+<p>
+  <strong>Requirements:</strong><br>
+  - Read and be sure to understand the Disclaimer before you use this website<span class="small-text">(see below)</span><br>
+  - Allow pop-ups and redirections <span class="small-text">(for this website)</span> in your browser<br>
+  - Enable JavaScript <span class="small-text">(for this website)</span><br>
+  - Make sure you can connect to your chosen search engine<br>
+  - Use a recent browser <span class="small-text">(Edge, Chrome, Firefox, etc. should be fine. If it doesn't work, you are probably using an old browser and really should update!)</span><br></p>
+  </section>
+
+  <footer>
+    <p class="disclaimer">
+    <hr>
+    <strong>Disclaimer:</strong><br>
+    - Informational Purpose: This website is for informational purposes only. The provided information does not constitute legal, financial, or professional advice.<br>
+    - Use at Your Own Risk: Your use of the features offered on this website is at your own risk. You are solely responsible for how you utilize these features.<br>
+    - Limitation of Liability: We shall not be held liable for any direct, indirect, incidental, special, consequential, or other damages arising from the use of this website or its content, including but not limited to loss of profits, business interruption, or loss of programs or data.<br>
+    - User Conduct: We are not responsible for the conduct of users of this website. We disclaim any liability for any inappropriate or harmful use of the provided features by users.<br>
+    - External Links: External links provided on this website are for your convenience. We do not endorse the content of linked external websites and disclaim any responsibility for them. Visiting external links is at your own risk.
+    <br>
+    By using this website, you agree to this disclaimer.<br>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
