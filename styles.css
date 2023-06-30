@@ -42,7 +42,7 @@
 }
 
 body {
-  font-family: "Liberation Mono", cursive; 
+  font-family: "Liberation Mono", "Courier New", monospace;
   background-color: #f2f2f2;
   line-height: 1.6;
   padding: 20px;
