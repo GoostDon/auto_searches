@@ -16,7 +16,7 @@
   
   <header>
     <h1 class="header-title"><strong>Auto Random Searches</strong></h1>
-    <p class="header-description">Here you can open random searches in your chosen search engine.<span class="small-text">(for informational purposes only)</span></p>
+    <p class="header-description">Here you can automatically open random searches in your chosen search engine.<span class="small-text">(for informational purposes only)</span></p>
   </header>
   
   <form id="searchForm">
@@ -38,7 +38,27 @@
     <label for="myDelay">Delayment:</label><br>
     <input type="number" id="myDelay" name='myDelay' value="3" min="0" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
   </div>
+  <br>
+  <!-- Support Message -->
+  <div id="support-message">
+    Please consider supporting us by disabling your ad blocker for our site.
+  </div>
 
+  <!-- AdSense Ad -->
+  <div id="ad-container">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+        crossorigin="anonymous"></script>
+
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+         data-ad-slot="xxxxxxxxxx"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
   <br>
   <div class="container">
     <button type="submit" title="Start the event (Shortcut: Enter)" class="start-button">Start!</button>
@@ -50,11 +70,10 @@
 <p class="info1"> 
   <strong>How it works:</strong><br>
   1. Make sure you meet the requirements<span class="small-text">(see below)</span><br>
-  2. Please don't block the ads on this website<span class="small-text">(Thank you!)</span><br>
-  3. Select your search engine<br>
-  4. (optional) Change the number of searches and the delay in seconds<br>
-  5. Press start or hit "Enter"<br>
-  6. Random searches will start in new tabs with your chosen delay between the searches</p>
+  2. Select your search engine<br>
+  3. (optional) Change the number of searches and/or the delayment in seconds<br>
+  4. Press start or hit "Enter"<br>
+  5. Random searches will start opneing in new tabs with your chosen delayment between the searches</p>
 
 <p>
   <strong>Requirements:</strong><br>
@@ -69,6 +88,7 @@
     <p class="disclaimer">
     <hr>
     <strong>Disclaimer:</strong><br>
+    - Search Engine Terms: You are solely responsible for conducting searches in a manner that is in compliance with the terms and conditions of your chosen search engine. We are not liable for any misuse of our service or any violations of search engine terms.<br>
     - Informational Purpose: This website is for informational purposes only. The provided information does not constitute legal, financial, or professional advice.<br>
     - Use at Your Own Risk: Your use of the features offered on this website is at your own risk. You are solely responsible for how you utilize these features.<br>
     - Limitation of Liability: We shall not be held liable for any direct, indirect, incidental, special, consequential, or other damages arising from the use of this website or its content, including but not limited to loss of profits, business interruption, or loss of programs or data.<br>
