@@ -1,3 +1,7 @@
+window.onload = function() {
+  document.getElementById('compareEngines').checked = false;
+}
+
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
     event.preventDefault();
