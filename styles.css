@@ -47,6 +47,21 @@ body {
   line-height: 1.6;
   padding: 20px;
 }
+.center-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#compareModeOptions {
+  width: 40%; /* je kunt dit naar wens aanpassen */
+}
+
+#compareModeOptions input[type="text"] {
+  width: 100%; /* make input take full width of its container */
+  min-width: 300px; /* minimum width of the input field */
+}
+
 
 footer {
   font-size: x-small;
@@ -118,4 +133,8 @@ button[type="submit"] {
   text-align: center;
   color: #000000;
   font-size: 1rem;
+}
+
+.defaultOption {
+  display: block;
 }

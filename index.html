@@ -21,6 +21,19 @@
   
   <form id="searchForm">
 <div class="options">
+  <label for="compareEngines">Compare Engines:</label><br>
+  <input type="checkbox" id="compareEngines" name="compareEngines" onchange="toggleCompareMode()">
+</div>
+
+<div class="center-container">
+  <div id="compareModeOptions" style="display:none;">
+    <br>
+    <input type="text" id="customSearch" name="customSearch" placeholder="Enter your search term here or leave it blank for a random search">
+  </div>
+</div>
+
+
+<div class="options">
     <label for="myEngine">Search engine:</label><br>
     <input type="radio" name="myEngine" value='B' id="optionB" checked='checked'><label for="optionB" title='Use Bing for you auto random searches'>Bing</label><br>
     <input type="radio" name="myEngine" value='D' id="optionD"><label for="optionD" title='Use DuckDuckGo for you auto random searches'>DuckDuckGo</label><br>
